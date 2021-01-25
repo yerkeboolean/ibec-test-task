@@ -1,4 +1,5 @@
 import Main from "./Main";
 import Contacts from "./Contacts";
+import About from "./About";
 
-export {Main, Contacts};
+export {Main, Contacts, About};

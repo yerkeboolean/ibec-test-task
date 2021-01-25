@@ -1,6 +1,6 @@
 import React from "react";
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
-import {Main, Contacts} from "./pages";
+import {Main, Contacts, About} from "./pages";
 import {Layout} from "./components";
 import "./app.scss";
 
@@ -12,7 +12,7 @@ const App: React.FC = () => (
                     <Main />
                 </Route>
                 <Route path="/about">
-                    <div>About</div>
+                    <About />
                 </Route>
                 <Route path="/contacts">
                     <Contacts />

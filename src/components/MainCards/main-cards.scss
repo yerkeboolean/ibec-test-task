@@ -1,13 +1,58 @@
 .main-cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 20px;
+    column-gap: 30px;
     &__line {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
         &--item {
+            height: 300px;
             background-color: #eaeaea;
             border-radius: 10px;
-            margin-bottom: 20px;
             padding: 0 20px;
+            border-color: lightgray;
+            -moz-box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.4),
+                inset -1px -1px 1px rgba(0, 0, 0, 0.4);
+            -webkit-box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.4),
+                inset -1px -1px 1px rgba(0, 0, 0, 0.4);
+            box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.4),
+                inset -1px -1px 1px rgba(0, 0, 0, 0.4);
+            position: relative;
+            .tape-case {
+                position: absolute;
+                left: 10px;
+                background-image: url(../../assets/img/tape-case.png);
+                width: 27px;
+                height: 59px;
+            }
+            .tape-template {
+                position: absolute;
+                left: 10px;
+                background-image: url(../../assets/img/tape-template.png);
+                width: 27px;
+                height: 59px;
+            }
+
+            .line {
+                position: absolute;
+                top: 44px;
+                left: 50px;
+                background-color: #e20e12;
+                width: 88%;
+                height: 1px;
+            }
+
+            .card_title {
+                position: absolute;
+                top: 17px;
+                left: 50px;
+                text-shadow: 1px 2px 0 rgba(0, 0, 0, 0.06);
+                color: #e3000f;
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 22px;
+            }
         }
     }
 }

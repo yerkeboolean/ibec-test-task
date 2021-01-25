@@ -4,10 +4,11 @@ nav {
     margin: 20px 0;
     width: 100%;
     .avatar {
-        background-color: red;
+        background-color: #e20e12;
         width: 170px;
         height: 150px;
         margin-right: 20px;
+        box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.06);
     }
 
     .menu {
@@ -16,7 +17,7 @@ nav {
         justify-content: space-between;
         width: 100%;
         &_username {
-            color: red;
+            color: #e20e12;
             font-size: 36px;
             font-weight: 500;
         }
@@ -25,7 +26,7 @@ nav {
             grid-template-columns: repeat(7, 1fr);
             justify-content: space-around;
             background: linear-gradient(180deg, #ffffff 0%, #dbdbdb 100%);
-            border-radius: 8px;
+            border-radius: 10px;
             border-color: lightgray;
             -moz-box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.4),
                 inset -1px -1px 1px rgba(0, 0, 0, 0.4);
@@ -33,11 +34,9 @@ nav {
                 inset -1px -1px 1px rgba(0, 0, 0, 0.4);
             box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.4),
                 inset -1px -1px 1px rgba(0, 0, 0, 0.4);
-            a {
+            &__item {
                 color: #8b8b8b;
                 text-decoration: none;
-            }
-            &__item {
                 padding: 15px 0;
                 width: 100%;
                 text-align: center;
