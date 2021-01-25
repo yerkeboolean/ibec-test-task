@@ -77,6 +77,9 @@ const Menu: React.FC = () => {
                                                 className="menu_nav__item--dropdown"
                                                 to="/autoMarket"
                                                 onMouseEnter={() => setIsShownNested(true)}
+                                                onMouseLeave={() => {
+                                                    setIsShownNested(false);
+                                                }}
                                             >
                                                 На чужой счет внутри банка
                                                 {isShownNested && (

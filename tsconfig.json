@@ -22,10 +22,16 @@
       "components/*": [
         "src/components/*"
       ]
-    }
+    },
+    "preserveConstEnums": true,
+    "outDir": "dist"
   },
   "include": [
     "./src",
     "./webpack.config.ts"
+  ],
+  "exclude": [
+    "dist",
+    "node_modules"
   ]
 }

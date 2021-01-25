@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react";
 import "./about.scss";
 import axios from "axios";
+import {AboutCard} from "../../components/";
 
 const About: React.FC = () => {
     const [users, setUsers] = useState(null);
@@ -14,25 +15,7 @@ const About: React.FC = () => {
     return (
         <div className="about">
             {users ? (
-                users.map((item) => (
-                    <div key={item.id} className="about__item">
-                        <div className="about__item--text">
-                            <span>Имя:</span> {item.name}{" "}
-                        </div>
-                        <div className="about__item--text">
-                            <span>Email:</span> {item.email}
-                        </div>
-                        <div className="about__item--text">
-                            <span>Номер телефона:</span> {item.phone}
-                        </div>
-                        <div className="about__item--text">
-                            <span>Сайт:</span> {item.website}
-                        </div>
-                        <div className="about__item--text">
-                            <span>Место работы:</span> {item.company.name}
-                        </div>
-                    </div>
-                ))
+                users.map((item) => <AboutCard key={item.id} item={item} />)
             ) : (
                 <div>Sorry, no data</div>
             )}

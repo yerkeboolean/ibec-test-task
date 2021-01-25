@@ -3,24 +3,6 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 30px;
     row-gap: 30px;
-    &__item {
-        background-color: #eaeaea;
-        border-radius: 10px;
-        padding: 20px;
-        border-color: lightgray;
-        -moz-box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.4),
-            inset -1px -1px 1px rgba(0, 0, 0, 0.4);
-        -webkit-box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.4),
-            inset -1px -1px 1px rgba(0, 0, 0, 0.4);
-        box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.4),
-            inset -1px -1px 1px rgba(0, 0, 0, 0.4);
-        &--text {
-            font-size: 20px;
-            span {
-                font-weight: bold;
-            }
-        }
-    }
 }
 @media screen and (max-width: 480px) {
     .about {
