@@ -1,0 +1,72 @@
+nav {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    width: 100%;
+    .avatar {
+        background-color: red;
+        width: 170px;
+        height: 150px;
+        margin-right: 20px;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        &_username {
+            color: red;
+            font-size: 36px;
+            font-weight: 500;
+        }
+        &_nav {
+            display: inline-grid;
+            grid-template-columns: repeat(7, 1fr);
+            justify-content: space-around;
+            background: linear-gradient(180deg, #ffffff 0%, #dbdbdb 100%);
+            border-radius: 8px;
+            margin-right: 20px;
+            border-color: lightgray;
+            -moz-box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.4),
+                inset -1px -1px 1px rgba(0, 0, 0, 0.4);
+            -webkit-box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.4),
+                inset -1px -1px 1px rgba(0, 0, 0, 0.4);
+            box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.4),
+                inset -1px -1px 1px rgba(0, 0, 0, 0.4);
+            a {
+                color: #8b8b8b;
+                text-decoration: none;
+            }
+            &__item {
+                padding: 15px 0;
+                width: 100%;
+                text-align: center;
+                &--selected {
+                    background: linear-gradient(
+                        90deg,
+                        rgba(255, 255, 255, 0.017542051000087544) 0%,
+                        rgba(255, 255, 255, 0.8298669809720763) 51%,
+                        rgba(2, 0, 36, 0) 100%
+                    );
+                }
+                &:hover {
+                    background: linear-gradient(
+                        90deg,
+                        rgba(255, 255, 255, 0.017542051000087544) 0%,
+                        rgba(255, 255, 255, 0.8298669809720763) 51%,
+                        rgba(2, 0, 36, 0) 100%
+                    );
+                }
+                &:first-child {
+                    border-top-left-radius: 10px;
+                    border-bottom-left-radius: 10px;
+                }
+                &:last-child {
+                    border-top-right-radius: 10px;
+                    border-bottom-right-radius: 10px;
+                }
+            }
+        }
+    }
+}

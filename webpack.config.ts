@@ -15,7 +15,11 @@ const webpackConfig = (env): Configuration => ({
     },
     output: {
         path: path.join(__dirname, "/dist"),
-        filename: "build.js"
+        filename: "build.js",
+        publicPath: "/"
+    },
+    devServer: {
+        historyApiFallback: true
     },
     module: {
         rules: [
