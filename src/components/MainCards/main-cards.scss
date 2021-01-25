@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 30px;
+    row-gap: 40px;
     &__line {
         display: flex;
         flex-direction: column;
@@ -53,6 +54,26 @@
                 font-weight: 600;
                 line-height: 22px;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    .main-cards {
+        .line {
+            width: 70%;
+        }
+        .card_title {
+            font-size: 18px;
+        }
+    }
+}
+@media screen and (max-width: 480px) {
+    .main-cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        .line {
+            width: 80%;
         }
     }
 }

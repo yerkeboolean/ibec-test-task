@@ -36,3 +36,12 @@
         }
     }
 }
+
+@media screen and (max-width: 480px) {
+    .ads {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 10px;
+        margin-top: 30px;
+    }
+}
