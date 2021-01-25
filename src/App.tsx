@@ -1,7 +1,7 @@
 import React from "react";
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import {Main, Contacts} from "./pages";
-import Layout from "./Layout";
+import {Layout} from "./components";
 import "./app.scss";
 
 const App: React.FC = () => (

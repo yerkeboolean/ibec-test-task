@@ -1,7 +1,7 @@
 nav {
     display: flex;
     flex-direction: row;
-    margin-top: 20px;
+    margin: 20px 0;
     width: 100%;
     .avatar {
         background-color: red;
@@ -26,7 +26,6 @@ nav {
             justify-content: space-around;
             background: linear-gradient(180deg, #ffffff 0%, #dbdbdb 100%);
             border-radius: 8px;
-            margin-right: 20px;
             border-color: lightgray;
             -moz-box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.4),
                 inset -1px -1px 1px rgba(0, 0, 0, 0.4);

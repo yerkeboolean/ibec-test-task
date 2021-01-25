@@ -1,0 +1,13 @@
+.main-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    &__line {
+        &--item {
+            background-color: #eaeaea;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            padding: 0 20px;
+        }
+    }
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import {Menu} from "./components";
+import {Menu} from "..";
 import "./layout.scss";
 
 const Layout: React.FC = (props) => (
